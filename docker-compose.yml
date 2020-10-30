@@ -5,10 +5,10 @@ services:
     volumes:
       - ./backend:/app/backend
     ports:
-      - "8000:8000"
+      - "8050:8050"
     stdin_open: true
     tty: true
-    command: python3 manage.py runserver 0.0.0.0:8000
+    command: python3 manage.py runserver 0.0.0.0:8050
   frontend:
     build: ./frontend
     volumes:

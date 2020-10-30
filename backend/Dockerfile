@@ -12,8 +12,8 @@ RUN pip3 install --upgrade pip -r requirements.txt
 COPY . /app/backend
 
 # Make port 8000 available for the app
-EXPOSE 8000
+EXPOSE 8050
 
 # Be sure to use 0.0.0.0 for the host within the Docker container,
 # otherwise the browser won't be able to find it
-CMD python3 manage.py runserver 0.0.0.0:8000
+CMD python3 manage.py runserver 0.0.0.0:8050
