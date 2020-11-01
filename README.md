@@ -1,4 +1,6 @@
 # Docker + Django + React App Tutorial
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fchaalia%2Fdocker-django-react.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fchaalia%2Fdocker-django-react?ref=badge_shield)
+
 
 Code repo for a series of tutorials on setting up an app with Docker Compose, Django, and Create React App. Each tutorial has its own branch (because it was difficult to get deployments to work from subdirectories).
 
@@ -18,3 +20,7 @@ Checkout the branch for a given tutorial, and run `docker-compose build`
 ## Running the app on local
 
 Run `docker-compose up` to see messages in the terminal. Run `docker-compose start` to run the app in the background.
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fchaalia%2Fdocker-django-react.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fchaalia%2Fdocker-django-react?ref=badge_large)
