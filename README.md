@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/chaalia/docker-django-react/branch/master/graph/badge.svg?token=AXNOQ3YJE9)](https://codecov.io/gh/chaalia/docker-django-react)
+
 # Docker + Django + React App Tutorial
 
 Code repo for a series of tutorials on setting up an app with Docker Compose, Django, and Create React App. Each tutorial has its own branch (because it was difficult to get deployments to work from subdirectories).
