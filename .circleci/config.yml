@@ -1,16 +1,26 @@
-version: 2.1
-orbs:
-  codecov: codecov/codecov@1.0.2
 
-Run-With-Node:
-    docker:
-      - image: circleci/node:10-browsers
-    steps:
-      - checkout
-      - run:
-          name: install and run tests
-          command: |
-            pip install pytest && pytest
       - codecov/upload:
           file: './coverage/clover.xml'
           token: e2c76867-bf6e-4b2f-a933-1fd50dafcb22
+
+version: 2.1
+
+orbs:
+  python: circleci/python@0.2.1
+
+jobs:
+  build-and-test:
+    executor: python/default
+    steps:
+      - checkout
+      - python/load-cache
+      - python/install-deps
+      - python/save-cache
+      - run:
+          command: pip install pytest && pytest
+          name: Test
+
+workflows:
+  main:
+    jobs:
+      - build-and-test
