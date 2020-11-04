@@ -1,12 +1,5 @@
-#coverage:
-#  status:
-#    project:
-#      backend:
-#        paths:
-#          - docker-django-react/backend
-
 codecov:
-  require_ci_to_pass: yes
+  require_ci_to_pass: no
 coverage:
   precision: 2
   round: down
