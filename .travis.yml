@@ -16,7 +16,7 @@ install:
 script:
   - pwd
   - ls
-  - pytest
+  - cd backend && pytest
 
 after_success:
   - codecov
