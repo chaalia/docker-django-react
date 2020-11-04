@@ -1,4 +1,4 @@
-[![codecov](https://codecov.io/gh/chaalia/docker-django-react/branch/master/graph/badge.svg?token=AXNOQ3YJE9)](https://codecov.io/gh/chaalia/docker-django-react)
+[![codecov](https://codecov.io/gh/chaalia/docker-django-react/branch/master/graph/badge.svg?token=e2c76867-bf6e-4b2f-a933-1fd50dafcb22)](https://codecov.io/gh/chaalia/docker-django-react)
 
 # Docker + Django + React App Tutorial
 
