@@ -9,14 +9,11 @@ python: 3.6
 
 # Install the codecov pip dependency
 install:
-  - pwd
   - cd backend && pip install -r requirements.txt
-  - pwd
 
 # Run the unit test
 script:
   - pytest
-  - pwd
 
 after_success:
   - codecov
