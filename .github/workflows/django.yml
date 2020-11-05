@@ -24,10 +24,7 @@ jobs:
     - name: Install Dependencies
       run: |
         pwd
-        cd ../../
-        pwd
-        cd backend
-        pip install -r requirements.txt
+        pip install django coverage pytest pytest-django pytest-cov pytest-pythonpath codecov
     - name: Run Tests
       run: |
         pytest
