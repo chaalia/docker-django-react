@@ -24,9 +24,12 @@ jobs:
     - name: Install Dependencies
       run: |
         pwd
+        env
         pip install django coverage pytest pytest-django pytest-cov pytest-pythonpath codecov
     - name: Run Tests
       run: |
+        pwd
+        ls
         pytest
         codecov
         bash <(curl -s https://codecov.io/bash) -t e2c76867-bf6e-4b2f-a933-1fd50dafcb22
