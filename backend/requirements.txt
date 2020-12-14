@@ -5,3 +5,7 @@ pytest-django
 pytest-cov
 pytest-pythonpath
 codecov
+djangorestframework
+markdown
+django-filter
+pillow
