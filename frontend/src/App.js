@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { Component} from 'react';
 import axios from 'axios';
 import './App.css';
+import PostList from './components/PostList/PostList';
+import PostForm from './components/PostForm/PostForm';
+import Less from './components/less'
 
 function handleSubmit(event) {
   const text = document.querySelector('#char-input').value
@@ -12,20 +15,30 @@ function handleSubmit(event) {
     .catch(err => console.log(err))
 }
 
-function App() {
-  return (
-    <div className="App">
-      <div>
-        <label htmlFor='char-input'>How many characters does</label>
-        <input id='char-input' type='text' />
-        <button onClick={handleSubmit}>have?</button>
-      </div>
-
-      <div>
-        <h3 id='char-count'></h3>
-      </div>
-    </div>
-  );
+class App extends Component {
+    state = {
+                posts: [
+                {
+                id:1,
+                text:'hello world'},
+                {
+                id:2,
+                text:'hello guys'},
+                {
+                id:3,
+                text:'hello bro'}]
+            }
+    render() {
+    return (
+        <div className="App">
+           <div>
+           <PostForm />
+           <hr />
+           <PostList posts ={this.state.posts} />
+           <Less />
+        </div></div>
+    );
+    }
 }
 
 export default App;
