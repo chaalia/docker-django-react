@@ -1,11 +1,13 @@
 import React from 'react';
 import Post from './Post'
+import {Button} from 'react-bootstrap';
 
 const PostList = (props) => {
     return (
     <>
-        <h1> Post lists here </h1>
-        {props.posts.map(post =>
+        <Button onClick={props.show} variant='primary'>{props.status ? 'Hide posts' : 'Show Posts'}</Button>
+        {props.status && 
+        props.posts.map(post =>
         { return <Post key={post.id} post={post} />
         })}
     </>
